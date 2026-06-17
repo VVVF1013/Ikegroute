@@ -54,6 +54,28 @@
             right: 0;
         }
 
+        body.other {
+            background: #000000;
+            color: rgb(255, 255, 255);
+            margin: 0 24pt 0 24pt;
+            font-family: 'AA_FONT_2025' , 'ＭＳ 明朝' , '游明朝' , '游明朝体' , serif;
+            font-smooth: never;
+            -webkit-font-smoothing: none;
+            font-size: 14pt;
+            line-height:100%;
+            word-break: break-all;
+            font-kerning: none;
+            font-variant-ligatures: none;
+            text-rendering: optimizeSpeed;
+            letter-spacing: 0;
+            word-spacing: 0;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
         .wrapper {
             max-width: 60em;
             margin: 0 auto;
@@ -67,10 +89,9 @@
             -webkit-font-smoothing: none;
         }
 
-        f {
+        f{
             color: rgb(255, 255, 255);
             text-decoration: none;
-            font-family: 'AA_FONT_2025' , 'ＭＳ 明朝','MS Gothic', 'ＭＳ ゴシック', monospace;
             display: block;
             max-width: 400em;
             width: max-content;
@@ -111,6 +132,9 @@
             }
             else if (ua.includes("Mac")) {
                 document.body.classList.add("mac");
+            }
+            else {
+                document.body.classList.add("other");
             }
         });
 
